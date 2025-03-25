@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportsLive Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">SportsLive Hub</h1>
+         <nav id="ele">
+                <ul><a href="live.html">Live Sports</a></ul>
+                <ul><a href="recorded.html">Recorded Lectures</a></ul>
+                <ul><a href="account.html">SignIn / Create Account </a></ul>
+                <ul><a href="contact.html">Contact</a></ul>
+        </nav> 
+        <input type="text" id="search" placeholder="Search Live Sports...">
+        <button onclick="searchSports()">Search</button>
+    </header>
+    <main>
+        <section id="scoreboard">
+            <h2>Live Scores</h2>
+            <div id="scores"></div>
+        </section>
+
+        <section id="sports-channels">
+            <h2>Live Sports Channels</h2>
+            <div id="channels"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
