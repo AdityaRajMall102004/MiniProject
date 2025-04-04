@@ -109,6 +109,5 @@ const getLiveScores = async () => {
         err.innerText = "Something went wrong fetching match data!";
     }
 };
-
-//document.addEventListener("DOMContentLoaded", getLiveScores);
-//setInterval(getLiveScores, 30000);
+document.addEventListener("DOMContentLoaded", getLiveScores);
+setInterval(getLiveScores, 30000);
