@@ -72,7 +72,7 @@ const getLiveScores = async () => {
         console.log(result);
 
         if (result.status === "success" && result.data) {
-            let match = result.data;
+            let match = result.data;getLiveScores
 
             // Update team names
             t1.innerText = match.teams[0];
