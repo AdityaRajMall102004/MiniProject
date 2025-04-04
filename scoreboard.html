@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportsLive Hub</title>
+    <link rel="stylesheet" href="scoreboard.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">SportsLive Hub</h1>
+         <nav id="ele">
+                <ul><a href="index.html">Home</a></ul>
+                <ul><a href="live.html">Live Sports</a></ul>
+                <ul><a href="scoreboard.html">Live ScoreBoard </a></ul>
+                <ul><a href="account.html">SignIn / Create Account </a></ul>
+                <ul><a href="contact.html">Contact</a></ul>
+        </nav> 
+        <input type="text" id="search" placeholder="Search Live Sports...">
+        <button onclick="searchSports()">Search</button>
+    </header>
+    <main class="content">
+        <section class="main-content">
+            <h2>Welcome to IPL Live Scores</h2>
+            <p>Stay updated with real-time IPL match scores, live stats, and commentary.</p>
+            <p id="error">No Live Matches!!!</p>
+        </section>
+        <section id="scoreboard">
+            <h1>Live Match 🔥</h1>
+            <div class="match-info">
+                <h2 id="matchType">Match Type: <strong>N.A</strong></h2>
+                <h3><span id="teamA">Team 1</span> 🆚 <span id="teamB">Team 2</span></h3>
+                <p class="status">⏳ <span id="matchStatus">N.A</span></p>
+                <p><strong>Venue:</strong> <span id="venue">Location</span></p>
+                <p><strong>Date:</strong> <span id="matchDate">DD/MM/YYYY</span></p>
+            </div>
+            <div class="score">
+                <h3 id="battingTeam">Batting Team</h3>
+                <p><strong>Score:</strong> <span id="runs">N.A</span> / <span id="wickets">N.A</span></p>
+                <p><strong>Overs:</strong> <span id="overs">N.A</span></p>
+            </div>
+        </section>
+    </main>
+      <script src="scoreboard.js"></script>
+</body>
+</html>

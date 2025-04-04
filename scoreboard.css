@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #858585;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background:#001029;
+    color: white;
+    padding:9px;
+    margin:1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav#ele{
+    display:flex;
+    font-size: 19px;
+    align-items: center;
+}
+#ele ul a {
+    color:#FF5C5C;
+    text-decoration: none;
+}
+#ele ul a:hover {
+    color: #1FB0FF;
+    text-decoration: none;
+   
+}
+h1#heading {
+    color:#FFD60A;
+    text-align: left;
+    font-size: 35px;
+    margin-left: 10px; 
+}
+h1#heading:hover{
+    color:#1FB0FF;
+}
+input {
+    font-size: 18px;
+    margin-left:.8rem;
+    padding: 10px;
+    width: 220px;
+}
+button {
+    font-size: 19px;
+    padding: 12px;
+    background: #C1121F;
+    color: white;
+    border: 0ch;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1FB0FF;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1px;
+}
+
+/* Left Content Styling */
+.main-content {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Right Section (Scoreboard) Styling */
+#scoreboard {
+    width: 45%;
+    padding: 20px;
+    background-color: #292b2c;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scoreboard h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.match-info, .score {
+    margin-bottom: 20px;
+}
+
+/* Match Teams */
+#scoreboard h3 {
+    font-size: 2rem;
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+/* Match Status */
+#matchStatus {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Score Styling */
+.score p, .match-info p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.score strong, .match-info strong {
+    font-weight: bold;
+}
+
+/* Scoreboard Elements */
+#runs, #wickets, #overs {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+#battingTeam {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content, #scoreboard {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
