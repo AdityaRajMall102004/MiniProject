@@ -48,7 +48,6 @@ async function fetchSportsChannels() {
         console.error("Error fetching sports channels:", error);
     }
 }
-
 function searchSports() {
     let query = document.getElementById("search").value.toLowerCase();
     let cards = document.querySelectorAll(".card");
