@@ -110,4 +110,4 @@ const getLiveScores = async () => {
     }
 };
 document.addEventListener("DOMContentLoaded", getLiveScores);
-setInterval(getLiveScores, 30000);
+setInterval(getLiveScores, 60000);
