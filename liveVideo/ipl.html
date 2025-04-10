@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2025 Live Streaming</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #000000, #1a237e);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Loader styles */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #000000, #1a237e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        #loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #ffffff33;
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .channel-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .channel-card {
+            background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .channel-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+        .channel-card img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .channel-name {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            width: 100px;
+        }
+        #video-container {
+            margin: 20px auto;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            border-radius: 8px;
+            
+        }
+        #quality-selector {
+            margin-top: 10px;
+            padding: 5px;
+            background: #1e1e1e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <h1>IPL 2025 Live Streaming</h1>
+    <div id="video-container">
+        <video id="video"></video>
+        <h1> Click on Icons Below</h1>
+        <select id="quality-selector"></select>
+    </div>
+    <div class="channel-grid" id="channels"></div>
+
+    <script>
+        function _0x3437(_0x1d0d63,_0x37be78){const _0x59bfc1=_0xbd40();return _0x3437=function(_0x27ba9c,_0xdb0be0){_0x27ba9c=_0x27ba9c-(-0x1eae+-0x25f*-0x9+-0x25*-0x45);let _0x370ae0=_0x59bfc1[_0x27ba9c];return _0x370ae0;},_0x3437(_0x1d0d63,_0x37be78);}const _0x2af073=_0x3437;(function(_0x381b73,_0x199001){const _0x15147b=_0x3437,_0x413861=_0x381b73();while(!![]){try{const _0x1c80c4=-parseInt(_0x15147b(0xe1))/(0xeec+0x17d2*0x1+-0xd3*0x2f)*(parseInt(_0x15147b(0xe9))/(0x185b+0x2*0xa5f+-0x2a7*0x11))+parseInt(_0x15147b(0xed))/(-0x1147*-0x2+0x11d7*0x2+-0x4639)*(parseInt(_0x15147b(0xde))/(-0x3d1+0x2b*-0x35+0xcbc))+parseInt(_0x15147b(0xef))/(-0x5*-0x149+0x2*0x629+0x6*-0x31f)+-parseInt(_0x15147b(0xe4))/(-0x23*-0x101+0x19*0x10f+-0x3d94)*(-parseInt(_0x15147b(0xe5))/(-0x4bb+-0xa4f+0xf11))+parseInt(_0x15147b(0xb9))/(-0xcf5+-0x241f+0x311c)+-parseInt(_0x15147b(0xe3))/(-0x17*0x11c+0x23f2+-0xa65)+-parseInt(_0x15147b(0xcb))/(-0x1bd0+-0x1501+0x30db)*(parseInt(_0x15147b(0xa6))/(0x1*-0x1f1f+0x80c+0x10d*0x16));if(_0x1c80c4===_0x199001)break;else _0x413861['push'](_0x413861['shift']());}catch(_0x4d8395){_0x413861['push'](_0x413861['shift']());}}}(_0xbd40,-0x8c52*-0x5+0x1d603+0x1*-0x285b3),window[_0x2af073(0xf4)+_0x2af073(0xcc)](_0x2af073(0xc1),()=>{const _0x391ff6=_0x2af073,_0xc714b8={'GslaK':_0x391ff6(0xd2),'FwfPT':_0x391ff6(0xbe)},_0x30aded=document[_0x391ff6(0xce)+_0x391ff6(0xc7)](_0xc714b8[_0x391ff6(0xc6)]);_0x30aded[_0x391ff6(0xb6)][_0x391ff6(0x107)](_0xc714b8[_0x391ff6(0xca)]);}));const channels=[{'name':_0x2af073(0xa2)+_0x2af073(0xd0),'url':_0x2af073(0xff)+_0x2af073(0xb8)+_0x2af073(0xdc)+_0x2af073(0xbd)+_0x2af073(0xd3)+_0x2af073(0x108)+_0x2af073(0xeb)+_0x2af073(0xa9)+_0x2af073(0x105)+_0x2af073(0x106)+_0x2af073(0xc2)+_0x2af073(0xaa)+_0x2af073(0xab)+_0x2af073(0xb3)+_0x2af073(0xf1)+_0x2af073(0xd5),'logo':_0x2af073(0xea)+_0x2af073(0xf0)+_0x2af073(0xe6)+_0x2af073(0xb1)+_0x2af073(0x100)},{'name':_0x2af073(0xa3)+_0x2af073(0xf2),'url':_0x2af073(0xff)+_0x2af073(0xb8)+_0x2af073(0xfa)+_0x2af073(0xbd)+_0x2af073(0xd3)+_0x2af073(0xfc)+_0x2af073(0xeb)+_0x2af073(0xd7)+_0x2af073(0x105)+_0x2af073(0x106)+_0x2af073(0xc2)+_0x2af073(0xaa)+_0x2af073(0xab)+_0x2af073(0xb3)+_0x2af073(0xf1)+_0x2af073(0xaf),'logo':_0x2af073(0xea)+_0x2af073(0xf0)+_0x2af073(0xe6)+_0x2af073(0xb1)+_0x2af073(0x100)}],channelsContainer=document[_0x2af073(0xce)+_0x2af073(0xc7)](_0x2af073(0xa4)),video=document[_0x2af073(0xce)+_0x2af073(0xc7)](_0x2af073(0xd6)),qualitySelector=document[_0x2af073(0xce)+_0x2af073(0xc7)](_0x2af073(0xdb)+_0x2af073(0xbf));let hls;function loadStream(_0x2fd0c7){const _0x44a0e6=_0x2af073,_0x1923c1={'eDHEh':_0x44a0e6(0xf7),'PQIWT':function(_0x2a7542,_0x46e1ad){return _0x2a7542+_0x46e1ad;}};hls&&hls[_0x44a0e6(0x104)](),hls=new Hls(),hls[_0x44a0e6(0xa8)](_0x2fd0c7),hls[_0x44a0e6(0xb2)+'a'](video),hls['on'](Hls[_0x44a0e6(0xac)][_0x44a0e6(0xba)+_0x44a0e6(0xf9)],function(){const _0xa15aba=_0x44a0e6,_0x43ed63={'KumWD':_0x1923c1[_0xa15aba(0x103)],'YZrVG':function(_0xdb2fef,_0x30344f){const _0x29a448=_0xa15aba;return _0x1923c1[_0x29a448(0xdf)](_0xdb2fef,_0x30344f);}};video[_0xa15aba(0xe2)](),qualitySelector[_0xa15aba(0xbb)]='',hls[_0xa15aba(0xf3)][_0xa15aba(0xbc)]((_0x12c462,_0x2633cb)=>{const _0x30a19f=_0xa15aba,_0x3c3f9e=document[_0x30a19f(0xd8)+_0x30a19f(0xd4)](_0x43ed63[_0x30a19f(0xfe)]);_0x3c3f9e[_0x30a19f(0xf6)]=_0x2633cb,_0x3c3f9e[_0x30a19f(0xc0)+'t']=_0x43ed63[_0x30a19f(0x101)](_0x12c462[_0x30a19f(0xc9)],'p'),qualitySelector[_0x30a19f(0xee)+'d'](_0x3c3f9e);});});}qualitySelector[_0x2af073(0xf4)+_0x2af073(0xcc)](_0x2af073(0xa7),function(){const _0x271d4d=_0x2af073,_0x4fa5a6={'jZdHB':function(_0x550970,_0x6c2b5e){return _0x550970(_0x6c2b5e);}};hls&&(hls[_0x271d4d(0xa5)+'el']=_0x4fa5a6[_0x271d4d(0xb0)](parseInt,this[_0x271d4d(0xf6)]));}),channels[_0x2af073(0xbc)](_0xa2fed3=>{const _0x43079c=_0x2af073,_0x36cd8e={'diuZe':_0x43079c(0xae),'HBKRZ':_0x43079c(0xe7),'AADTk':_0x43079c(0xfb),'JwOuZ':_0x43079c(0xd1),'gtOgY':_0x43079c(0xad)+'rd','hkdTJ':_0x43079c(0xc8),'ogGjA':_0x43079c(0xdd)+'me'},_0x4d51ef=document[_0x43079c(0xd8)+_0x43079c(0xd4)](_0x36cd8e[_0x43079c(0xf8)]);_0x4d51ef[_0x43079c(0xc4)][_0x43079c(0xc5)]=_0x36cd8e[_0x43079c(0xcf)],_0x4d51ef[_0x43079c(0xc4)][_0x43079c(0xf5)+_0x43079c(0x109)]=_0x36cd8e[_0x43079c(0xb5)],_0x4d51ef[_0x43079c(0xc4)][_0x43079c(0xc3)]=_0x36cd8e[_0x43079c(0xcd)];const _0x4c4c06=document[_0x43079c(0xd8)+_0x43079c(0xd4)](_0x36cd8e[_0x43079c(0xf8)]);_0x4c4c06[_0x43079c(0xb6)][_0x43079c(0x107)](_0x36cd8e[_0x43079c(0x102)]),_0x4c4c06[_0x43079c(0xec)]=()=>loadStream(_0xa2fed3[_0x43079c(0xb7)]);const _0x2c1c4c=document[_0x43079c(0xd8)+_0x43079c(0xd4)](_0x36cd8e[_0x43079c(0xe8)]);_0x2c1c4c[_0x43079c(0xd9)]=_0xa2fed3[_0x43079c(0xda)],_0x2c1c4c[_0x43079c(0xb4)]=_0xa2fed3[_0x43079c(0xe0)];const _0x134df8=document[_0x43079c(0xd8)+_0x43079c(0xd4)](_0x36cd8e[_0x43079c(0xf8)]);_0x134df8[_0x43079c(0xb6)][_0x43079c(0x107)](_0x36cd8e[_0x43079c(0xfd)]),_0x134df8[_0x43079c(0xc0)+'t']=_0xa2fed3[_0x43079c(0xe0)],_0x4c4c06[_0x43079c(0xee)+'d'](_0x2c1c4c),_0x4d51ef[_0x43079c(0xee)+'d'](_0x4c4c06),_0x4d51ef[_0x43079c(0xee)+'d'](_0x134df8),channelsContainer[_0x43079c(0xee)+'d'](_0x4d51ef);});function _0xbd40(){const _0xa64964=['AADTk','classList','url','od-sports-','982448pMmWYZ','MANIFEST_P','innerHTML','forEach','cinema.com','hidden','lector','textConten','load','153748b162','alignItems','style','display','GslaK','ById','img','height','FwfPT','216730cTZbDa','stener','JwOuZ','getElement','HBKRZ','INDI','center','loader','/hls/live/','ent','r.m3u8','video','2025/eng/1','createElem','src','logo','quality-se','hin-fa.jio','channel-na','4gVnhGO','PQIWT','name','11BBoIaS','play','391932jupeAN','24LTEUNp','454048KcTAzQ','MZGbp/aa2v','flex','hkdTJ','8354VvodBf','https://i.','allow-ipl-','onclick','332211eOKHPq','appendChil','714585pogTfT','ibb.co/jvS','2025/maste','NGLISH','levels','addEventLi','flexDirect','value','option','diuZe','ARSED','eng-fa.jio','column','2117030/in','ogGjA','KumWD','https://pr','afqglu.png','YZrVG','gtOgY','eDHEh','destroy','540040246/','15mindvrm0','add','2117033/in','ion','TATA\x20IPL\x20H','TATA\x20IPL\x20E','channels','currentLev','209VFSbNI','change','loadSource','2025/hin/1','5e24a9ebc9','35a7faca3f','Events','channel-ca','div','r_apm.m3u8','jZdHB','4pr19c5hfi','attachMedi','e7810april','alt'];_0xbd40=function(){return _0xa64964;};return _0xbd40();}
+    </script>
+</body>
+</html>
